@@ -7,7 +7,6 @@
       "theme": "syntax-highlighting/assets/css/prism/prism-base16-tomorrow.light.css",
       "plugins": ["line-numbers", "line-highlight", ["src/prism-plugins/prism-ext/custom.css", "src/prism-plugins/prism-ext/custom.js"]],
       "codeBlockExtSyntax": true,
-      "cssClasses": "line-numbers",
       "lineHeight": 20
     }
   }

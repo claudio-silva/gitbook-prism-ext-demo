@@ -25,9 +25,9 @@ The same page you're reading right now should appear, with the difference that t
 
 ## Configuration
 
-Please study this project's [book.json](https://github.com/claudio-silva/gitbook-prism-ext-demo/blob/master/book.json) file, which contains a valid demo configuration, and the source of this [README.md](https://github.com/claudio-silva/gitbook-prism-ext-demo/blob/master/README.md) document.
+Please study this project's [book.json](https://github.com/claudio-silva/gitbook-prism-ext-demo/blob/master/book.json) file, which contains a valid demo configuration, and the source code of this [README.md](https://raw.githubusercontent.com/claudio-silva/gitbook-prism-ext-demo/master/README.md) document.
 
-Feel free to use the `custom.js` and `custom.css` files on your own books, or just parts of them.
+Feel free to use the bundled `custom.js` and `custom.css` files on your own books, or just parts of them.
 
 The `custom.js` Prism plugin is a demo of how to create your own plugins that you may include on your books. This specific plugin demo just suppresses line numbers when the code block has a single line.
 
@@ -49,7 +49,7 @@ If you want to apply the `line-numbers` class to all code blocks on your book, w
 
 ## Syntax highlighting examples, using Prism
 
-> **Note:** you should see the following examples on `http://localhost:4000` using the `gitbook serve` command.
+> **Note:** you should view the following examples on `http://localhost:4000` using the `gitbook serve` command.
 
 ##### Some PHP code with the `line-numbers` plugin
 
@@ -65,7 +65,7 @@ class HelloWorld extends Component
 }
 ```
 
-This code block begins with the following syntax, which applies the `line-numbers` CSS class to the block, thereby enabling the display of line numbers on it:
+This code block begins with the following syntax, which applies the `line-numbers` CSS class to the block, enabling the display of line numbers:
 
     ```php{.line-numbers}
 
@@ -99,7 +99,7 @@ The following options on `book.json` should be set:
 
 This code block should be defined with the following line:
 
-    ```html{data-line="2,4-5,10"}
+    ```html{.line-numbers data-line="2,4-5,10"}
 
 The following options on `book.json` should be set:
 
@@ -108,7 +108,6 @@ The following options on `book.json` should be set:
   "pluginsConfig": {
     "prism": {
       "codeBlockExtSyntax": true,
-      "cssClasses": "line-numbers",
       "lineHeight": 20
     }
   }
